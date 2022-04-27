@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/studentcourses-cpsc23000dbserver/databases/StudentCourses_db_cpsc23000",
+      "type": "mssql.azure",
+      "connectionId": "StudentCoursesContext",
+      "secretStore": "AzureAppSettings"
+    }
+  }
+}

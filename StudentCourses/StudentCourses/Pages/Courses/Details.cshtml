@@ -1,0 +1,55 @@
+﻿@page
+@model StudentCourses.Pages.Courses.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Course Details</h1>
+
+<div>
+    <!--<h4>CourseModel</h4>-->
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CourseModel.UniversityName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CourseModel.UniversityName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CourseModel.CourseName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CourseModel.CourseName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CourseModel.CourseCode)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CourseModel.CourseCode)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CourseModel.ProfessorName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CourseModel.ProfessorName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CourseModel.CourseRating)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CourseModel.CourseRating)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CourseModel.CourseDescription)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CourseModel.CourseDescription)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.CourseModel.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
